@@ -59,6 +59,11 @@ const contentSection2 = document.querySelector('.content-pick .destination h4');
 contentSection2.addEventListener('mousemove', () =>{contentSection2.style.fontSize = '10rem'; });
 
 
- const contentSection3 = document.querySelector('.content-pick .destination:nth-child(3) p');
+//  const contentSection3 = document.querySelector('.content-pick .destination:nth-child(3) p');
 
- contentSection3.addEventListener('resize', () => {contentSection3.style.color = 'red';});
+//  contentSection3.addEventListener('blur', () => {contentSection3.style.color = 'red';});
+
+
+const link = document.querySelector('.nav .nav-link:nth-child(1)');
+
+link.addEventListener('click', (event) => event.preventDefault());
