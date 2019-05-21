@@ -45,7 +45,6 @@ function function2() {
 }
 
 
-
 imageContent.addEventListener('mouseenter', function1);
 biggerSection.addEventListener('mouseup', function2);
 
@@ -79,18 +78,19 @@ function changeText2() {
 }
 
 
-
 const footerOnly = document.querySelector('.footer');
 
 console.log(footerOnly);
 
-window.addEventListener('load', () => {footerOnly.style.backgroundColor = 'red';});
+window.addEventListener('load', () => {
+  footerOnly.style.backgroundColor = 'red';
+});
 
-window.addEventListener('scroll',event => {
-    console.log(event.currentTarget.scrollY);
-    if(event.currentTarget.scrollY > 320){
-        document.querySelector('body').style.backgroundColor = "green";
-    } else if(event.currentTarget.scrollY < 320){
-        document.querySelector('body').style.backgroundColor = "";
-    }
+window.addEventListener('scroll', (event) => {
+  console.log(event.currentTarget.scrollY);
+  if (event.currentTarget.scrollY > 320) {
+    document.querySelector('body').style.backgroundColor = 'green';
+  } else if (event.currentTarget.scrollY < 320) {
+    document.querySelector('body').style.backgroundColor = '';
+  }
 });
