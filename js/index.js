@@ -31,7 +31,6 @@ boatPhoto.addEventListener('dblclick', () => {boatPhoto.style.opacity = 0.3; });
 
 
 const biggerSection = document.querySelector('.content-section.inverse-content');
-//  console.log(biggerSection);
 const imageContent = document.querySelector('.img-content');
 const adventureAwaits = document.querySelector('.content-section.inverse-content .text-content p');
 
@@ -67,3 +66,31 @@ contentSection2.addEventListener('mousemove', () =>{contentSection2.style.fontSi
 const link = document.querySelector('.nav .nav-link:nth-child(1)');
 
 link.addEventListener('click', (event) => event.preventDefault());
+
+
+
+
+
+
+
+
+
+const biggerSection2 = document.querySelector('.content-pick');
+const contentDiv = document.querySelector('.content-pick .destination:nth-child(even) p');
+
+
+
+
+contentDiv.addEventListener('click', changeText1, true);
+ biggerSection2.addEventListener('click', changeText2, true);
+
+
+ function changeText1(){
+    contentDiv.textContent = contentDiv.textContent += `  THAT ITS NOT FAIR! BUT I AM GOING FIRST BY DEFAULT(WHEN ITS FALSE)` 
+ };
+ 
+ function changeText2(){
+     contentDiv.textContent = contentDiv.textContent += `YEAH, I KNOW YOU COME FIRST VERY OFTEN, WHEN ITS DEFAULT BUT YOU KNOW SOMETIMES I CAN BE FIRST...YOU NEVER KNOW :) LIKE THIS TIME...HAHAAHAHAH   `
+
+ };
+ 
